@@ -15,7 +15,9 @@ namespace ImpinjConfigurator
 				// Connect to the reader.
 				// Change the ReaderHostname constant in SolutionConstants.cs 
 				// to the IP address or hostname of your reader.
+                Console.WriteLine ("*** Connecting to a reader at: {0} ...", SolutionConstants.ReaderHostname);
 				reader.Connect(SolutionConstants.ReaderHostname);
+                Console.WriteLine ("*** Connected to the reader.");
 
 				// Get the default settings
 				// and then modify the settings
@@ -40,6 +42,7 @@ namespace ImpinjConfigurator
 
 				// Apply the newly modified settings.
 				reader.ApplySettings(settings);
+                Console.Write("*** Settings applied to the reader.\n");
 
 				// Create a tag operation sequence.
 				// You can add multiple read, write, lock, kill and QT
@@ -68,9 +71,12 @@ namespace ImpinjConfigurator
 				// Add the tag operation sequence to the reader.
 				// The reader supports multiple sequences.
 				reader.AddOpSequence(seq);
+                Console.Write("*** OpSequence added to the reader.\n");
 
 				// Disconnect from the reader.
 				reader.Disconnect();
+                Console.Write("*** Disconnected from the reader.\n");
+
 			}
 			catch (OctaneSdkException e)
 			{
