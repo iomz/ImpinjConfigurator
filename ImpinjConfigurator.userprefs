@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="ImpinjConfigurator.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Properties/AssemblyInfo.cs">
+    <Files>
+      <File FileName="Program.cs" Line="36" Column="36" />
+      <File FileName="Properties/AssemblyInfo.cs" Line="17" Column="17" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
